@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages - E-Shuri</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="messages-page" class="slide-in messages-slide-in">
+        <div class="slide-in-header messages-header">
+            <h2>Messages</h2>
+            <button class="close-button" onclick="closeSlideIn('messages-page')">X</button>
+        </div>
+        <div class="slide-in-content messages-content">
+            <div class="message-list">
+                <div class="conversation" onclick="openConversation('professor-smith')">
+                    <h3>Professor Smith</h3>
+                    <p>Review the project guidelines...</p>
+                </div>
+                <div class="conversation" onclick="openConversation('group-member')">
+                    <h3>Group Member</h3>
+                    <p>Can we meet on Wednesday...</p>
+                </div>
+                <!-- Add more conversations as needed -->
+            </div>
+            <div id="full-message-view" class="full-view">
+                <!-- Message content will be dynamically loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
